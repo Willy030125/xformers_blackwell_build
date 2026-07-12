@@ -34,7 +34,7 @@ Build command:
 ```bash
 TORCH_CUDA_ARCH_LIST="7.5;8.0;8.6;8.9;9.0;10.0;12.0" \
 MAX_JOBS=2 \
-pip install --no-cache-dir --no-build-isolation -c constraints.txt -v git+https://github.com/facebookresearch/xformers.git@fde5a2fb46e3f83d73e2974a4d12caf526a4203e
+pip wheel --no-deps --no-build-isolation -c constraints.txt -v git+https://github.com/facebookresearch/xformers.git@fde5a2fb46e3f83d73e2974a4d12caf526a4203e
 ```
 
 ### Verify after install
